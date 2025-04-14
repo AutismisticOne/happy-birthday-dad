@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at center, #1e1e2f, #000);
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  #trail-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .container {
+    padding: 100px 20px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  h1 {
+    font-family: 'Noto Serif CJK', serif;
+    font-size: 3rem;
+    text-align: center;
+    animation: trippyBlink 2s infinite linear, shake 2s infinite ease-out;
+    background: linear-gradient(45deg, #6f00ff, #ff8c00, #40e0d0, #ff0080);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;  /* Vendor prefix for Safari */
+    background-clip: text;  /* Standard version */
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px hotpink;
+}
+
+  
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .from {
+    font-family: 'Cinzel', serif;  /* Gothic-style font */
+    font-style: italic;
+    margin-top: 40px;
+    font-size: 1.5rem;  /* Adjust the font size for readability */
+  }
+  
+  
+  footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  @keyframes trippyBlink {
+    0% {
+      filter: hue-rotate(0deg);
+      text-shadow: 0 0 10px #00ffc8;
+    }
+    25% {
+      filter: hue-rotate(90deg);
+      text-shadow: 0 0 12px #00ff40;
+    }
+    50% {
+      filter: hue-rotate(180deg);
+      text-shadow: 0 0 14px #ff8c00;
+    }
+    75% {
+      filter: hue-rotate(270deg);
+      text-shadow: 0 0 16px #00ffcc;
+    }
+    100% {
+      filter: hue-rotate(360deg);
+      text-shadow: 0 0 18px #ff0080;
+    }
+  }
+  
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    opacity: 0;
+    animation: floatBubble 10s infinite ease-in-out;
+  }
+  
+  @keyframes floatBubble {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translate(300px, -300px) scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(-300px, 300px) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  #floating-cake {
+    position: fixed;
+    z-index: 10;
+    pointer-events: none;
+    user-select: none;
+  }
+  

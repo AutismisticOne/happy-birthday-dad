@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Dad!</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <span id="floating-cake" style="font-size: 50px;">🎂</span>
+
+</head>
+<body>
+  <canvas id="trail-canvas"></canvas>
+
+  <div class="container">
+    <h1>Happy Birthday Dad! 🎉</h1>
+    <p>"We may not always say it, but we appreciate everything you've done and continue to do. You mean more to us than we can express. We hope today is as amazing as you are. Enjoy your day!"
+    </p>
+    <p class="from">With love, from the autismistic one🍄</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 - All Rights Reserved.</p>
+  </footer>
+
+  <!-- Floating Cake -->
+  <img id="floating-cake" src="img/cake.png" alt="Birthday Cake" />
+
+  <script src="js/trippy-trail.js"></script>
+</body>
+</html>
